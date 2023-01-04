@@ -1,0 +1,44 @@
+apiVersion: v1
+entries:
+  argo:
+  - apiVersion: v2
+    created: "2023-01-04T15:05:26.787247+05:30"
+    dependencies:
+    - name: argo-workflows
+      repository: https://argoproj.github.io/argo-helm
+      version: 0.22.6
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 5.16.13
+    - name: argo-rollouts
+      repository: https://argoproj.github.io/argo-helm
+      version: 2.21.1
+    digest: 270006f1d4c54a5878aea193dcf3283d325faab429ab19e968b05a4bc80e10a4
+    name: argo
+    urls:
+    - https://nikhilramolla-amnic-org.github.io/charts-pub/argo-1.0.0.tgz
+    version: 1.0.0
+  morgoth:
+  - apiVersion: v2
+    created: "2023-01-04T15:05:26.791593+05:30"
+    dependencies:
+    - name: sauron
+      repository: file://../sauron
+      version: 1.0.0
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.4.1
+    digest: 106412ad289018fb128cd0e35bc081c2a8b435aabc6dfb2b27839a49aec534f0
+    name: morgoth
+    urls:
+    - https://nikhilramolla-amnic-org.github.io/charts-pub/morgoth-1.0.0.tgz
+    version: 1.0.0
+  sauron:
+  - apiVersion: v2
+    created: "2023-01-04T15:05:26.791705+05:30"
+    digest: 56579f0a49e9dd3b02f4e9e8d96aa780aab1f0ae57d847c60e0846c9e3997fba
+    name: sauron
+    urls:
+    - https://nikhilramolla-amnic-org.github.io/charts-pub/sauron-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-01-04T15:05:26.776155+05:30"
